@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferença entre ID e CLASS</title>
+    <style>
+        body {
+            background-image: linear-gradient(45deg, #F2B6A0, #BF7E6F);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Diferença entre ID e CLASS</h1>
+
+    <h2>Nunca repita o nome de ID</h2>
+    <p>Nesse caso é melhor utilizar-se da propriedade class.</p>
+
+    <h2>Não dê nomes para suas classes e ID's pela forma</h2>
+    <p>Exemplo: class="red", não dê esse nome, pois se um cliente pedir para mudar a cor de algum item com essa propriedade, o nome não fará mais sentido.</p>
+
+    <h2>Dê nomes pela funcionalidade</h2>
+    <p>Exemplo: class="basico". A ofazer um catálogo com vários cursos, os cursos básicos terão seu nome em vermelho. 
+        Nesse caso criamos uma propriedade class="basico" para todos os cursos básicos, e colorimos a fonte de vermelho.
+        Ao invés de criar uma propriedade class="vermelho" para todos os cursos básicos que serão coloridos de vermelho.
+    </p>
+
+    <h2>Nomenclatura no CSS</h2>
+    <p>
+        No CSS geralmente nomeamos as tags com ID da seguinte forma:
+        <pre><code>
+            h2#curso_HTML {
+                
+            }
+        </code></pre>
+        Pois são itens únicos e saber que estrutura é, contribui para uma melhor organização.
+    </p>
+    <p>
+        Já as class sem a estrutura antes do nome designado para ela. Ficando da seguinte forma:
+        <pre><code>
+            .basico {
+                
+            }
+        </code></pre>
+        Isso porque podem ser várias tags diferentes a receber a mesma classificação. 
+    </p>
+</body>
+</html>

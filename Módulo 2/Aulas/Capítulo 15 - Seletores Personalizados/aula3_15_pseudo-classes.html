@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        .exemplo1 {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            margin: 5px;
+            text-align: center;
+            background-color: #3E94F0;
+            color: #1A3D63;
+            border: 1px solid black;
+        }
+
+        .exemplo1:hover {
+            background-color: #485F63;
+            color: #ADE5F0;
+        }
+
+        #destaque {
+            color: red;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        #exemplo2:hover > p {
+            display: block;
+            color: #635C46;
+            background-color:#C9BB8D ;
+        }
+
+        #exemplo2:hover {
+            background-color: #EBDBA5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Classes</h1>
+
+    <h2>Exemplo 1</h2>
+    <div class="exemplo1">São representados por :</div>
+    <div class="exemplo1">Devem ser chamados depois de algum elemento</div>
+    <div class="exemplo1">Servem para expressar algum acontecimento</div>
+    <div class="exemplo1">Exemplo: div:hover, quando o mouse passar em cima da div</div>
+
+    <h2>Exemplo 2</h2>
+    <p>Passe o mouse sobre o texto abaixo.</p>
+    <div id="exemplo2">
+        <spam id="destaque">Passe o mouse aqui</spam>
+        <p>Aparece o texto escondido pelo display:none</p>
+    </div>
+
+</body>
+</html>

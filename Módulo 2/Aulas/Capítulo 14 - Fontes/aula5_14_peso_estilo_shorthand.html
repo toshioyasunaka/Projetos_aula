@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso, Estilo e Shorthand font</title>
+    <style>
+        body {
+            background-image: radial-gradient(#1D7874, #679289);
+            text-align: center;
+        }
+
+        li {
+            line-height: 1.6;
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Peso, Estilo e Shorthand font</h1>
+
+    <h2>Peso</h2>
+    <p>Representado pelo código: "font-weight". Tem como valores:
+        <ul>
+            <li>lighter</li>
+            <li>normal</li>
+            <li>bold</li>
+            <li>bolder</li>
+            <li>valores numéricos de 100 a 900</li>
+        </ul>
+        Não são todas as fontes que possuem peso para ser ajustado.
+    </p>
+
+    <h2>Estilo</h2>
+    <p>
+        Representado pelo código: "font-style". Possui os valores:
+        <ul>
+            <li>normal</li>
+            <li>italic</li>
+        </ul>
+        Assim como o peso, grande parte das fontes não possuem estilos além do normal.
+    </p>
+
+    <h2>Shorthand Font</h2>
+    <p>
+        É um método simplificado de passar as características da fonte. <br>
+        Valores devem ser distribuídos na seguinte ordem: <br>
+        font-style &#8594; font-weight &#8594; font-size &#8594; font-family. <br>
+    </p>
+    <p>
+        Exemplo: 
+        <code><pre>
+            font: italic bolder 3em 'Work Sans', sans-serifc;
+        </pre></code>
+    </p>
+</body>
+</html>

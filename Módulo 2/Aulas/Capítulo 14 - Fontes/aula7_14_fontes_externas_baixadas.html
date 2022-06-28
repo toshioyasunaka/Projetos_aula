@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas Baixadas</title>
+    <style>
+        @font-face {
+            font-family: 'vlogger';
+            src: url('Fontes/Vlogger.otf') format('opentype');
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: 'Moonlily';
+            src: url('Fontes/Moonlily.ttf') format('truetype');
+            font-weight: normal;
+        }
+
+        h1 {
+            font-family: 'vlogger';
+        }
+
+        body {
+            background-image: radial-gradient(#D95959, #D9D9D9);
+            line-height: 1.6;
+            font-family: 'Moonlily';
+            font-size: 1.2em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Fontes Externas Baixadas</h1>
+    <p>
+        <ol>
+            <li>Baixar a fonte;</li>
+            <li>Extrair do arquivo zip e colocar na pasta do projeto;</li>
+            <li>Em style, no CSS, utilizar o @font-face(1º opção); <br>
+                Aqui estamos criando a fonte, o nome pode ser aleatório, mas deve ser o mesmo quando inserido no corpo do texto;</li>
+            <li>Em src: url(); colocar o caminho que está o arquivo da fonte;</li>
+                <ul>Aqui é preciso definir o formato da fonte (ver nas propriedades do arquivo):
+                    <li>opentype (otf);</li>
+                    <li>truetype (ttf);</li>
+                    <li>embedded-opentype;</li>
+                    <li>truetype-aat (Apple Advanced Typography);</li>
+                    <li>svg;</li>
+                    O formato fica após o . (ponto) do nome da fonte. <br>
+                    Cada navegador pode ter uma compatibilidade diferente, dependendo do formato da fonte.
+                </ul>
+            <li>Por último, é só colocar a fonte onde se deseja usar (no body, h1 e etc.)</li>
+        </ol>
+    </p>
+</body>
+</html>

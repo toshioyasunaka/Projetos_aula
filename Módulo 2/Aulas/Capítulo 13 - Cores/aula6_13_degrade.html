@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degradê</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #4967D6, #7139BC, #8239AE, #A93393, #C8466E, #D6555D, #EC7538, #FDB44C, #FED97C);
+            background-attachment: fixed;
+        }
+
+        #testes {
+            display: flex;
+        }
+
+        #teste1 {
+            width: 150px;
+            height: 150px;
+            margin: 30px;
+            background-image: conic-gradient(blue, lightblue);
+            color: white;
+        }
+        
+        #teste2 {
+            width: 150px;
+            height: 150px;
+            margin: 30px;
+            background-image: linear-gradient(45deg, blue, lightblue);
+            color: white;
+        }
+        
+        #teste3 {
+            width: 150px;
+            height: 150px;
+            margin: 30px;
+            background-image: radial-gradient(blue 30%, lightblue 80%);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Capítulo 13 - Aula 6</h1>
+
+    <h2>Degradê/Gradiente com CSS</h2>
+
+    <div id="testes">
+        <div id="teste1">Teste</div>
+        <div id="teste2">Teste</div>
+        <div id="teste3">Teste</div>
+    </div>
+
+    <p>
+        <ul>
+            <li>Existem 3 tipos de gradiente: linear-gradient, radial-gradient e conic-gradient;</li>
+            <li>É possível controlar a quantidade que será preenchida com cada cor após elas serem definidas.</li>
+            <li>Com o método linear há como controlar a inclinação das cores antes de selecioná-las;</li>
+        </ul>
+    </p>
+
+
+</body>
+</html>

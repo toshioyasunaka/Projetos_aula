@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos</title>
+    <style>
+        body {
+            background-image: radial-gradient(#005C53, #DBF227);
+        }
+
+        li {
+            line-height: 1.6em;
+        }
+
+        a {
+            color: #042940;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: #D6D58E;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: #9FC131;
+        }
+
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: lightgray;
+        }
+
+        .especial::before {
+            content: '⇒';
+        }
+
+        .especial::after {
+            content: '⇐';
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Elementos</h1>
+    <ul>
+        <li><a href="https://twitter.com/home" target="_blank">Twitter</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">You Tube</a></li>
+        <li class="especial"><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
+    </ul>
+
+    <p>Os pseudo-elementos mexem no conteúdo periférico ao elemento.</p>
+
+    <h2>Formas de Representação</h2>
+    <ul>
+        <li><strong>id: #</strong> </li>
+        <li><strong>class: .</strong></li>
+        <li><strong>pseudo-class: :</strong></li>
+        <li><strong>pseudo-element: ::</strong></li>
+        <li><strong>children: &gt;</strong></li>
+    </ul>
+</body>
+</html>

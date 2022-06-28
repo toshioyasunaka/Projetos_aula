@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detectando Fontes dentro de uma Imagem</title>
+    <style>
+        @font-face {
+            font-family: 'onepiece';
+            src: url('Fontes/one\ piece\ font.ttf');
+        }
+
+        body {
+            background-image: url('https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        img {
+            width: 150px;
+        }
+
+        #toshio {
+            font-family: 'onepiece';
+            font-size: 12em;
+            text-align: center;
+            margin: 0 auto;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Detectando Fontes dentro de uma Imagem</h1>
+    <p>Esses 3 sites são muito utilizados para detectar a fonte utilizada em uma imagem:</p>
+    <ul>
+        <li> What Font Is</li>
+        <a href="https://www.whatfontis.com/"><img src="https://www.whatfontis.com/img/logo-what-font-is.png" alt="Logo do site What Font Is"></a>
+
+        <li>Font Squirrel</li>
+        <a href="https://www.fontsquirrel.com/"><img src="https://www.fontsquirrel.com/presentation/images/logo.png" alt="Logo do site Font Squirrel"></a>
+
+        <li>My Fonts</li>
+        <a href="https://www.myfonts.com/"><img src="https://wikiimg.tojsiabtv.com/wikipedia/commons/thumb/d/d3/Myfontslogo.svg/1200px-Myfontslogo.svg.png" alt="Logo do site Myfonts"></a>
+    </ul>
+
+    <div>
+        <p id="toshio">
+            TOSHIO
+        </p>
+    </div>
+</body>
+</html>

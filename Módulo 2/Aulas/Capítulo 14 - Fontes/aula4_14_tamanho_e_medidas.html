@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho de Fonte e suas Medidas</title>
+    <style>
+        body {
+            background-image: linear-gradient(45deg, #A8D4AD, #F2F79E);
+        }
+
+        li {
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tamanho de Fonte e suas Medidas</h1>
+    <h2>Medidas Absolutas</h2>
+    <ul>
+        <li><strong>cm</strong>: centímetro. Muitas vezes os navegadores não conseguem renderizar 1cm na tela, isso por existir diversos tamanhos de tela.</li>
+        <li><strong>mm</strong>: milímetro. Assim como a unidade cm, a apresentação com mm pode ser diferente dependendo do tamanho da tela.</li>
+        <li><strong>in</strong>: polegada.</li>
+        <li><strong>px</strong>: pixel. Também varia conforme o tamanho de tela e resolução suportada pelo dispositivo.</li>
+        <li><strong>pt</strong>: ponto. Medida de tipografia de papel. Não recomendado para renderização em telas. <br>
+            Em editores de texto como o Word utiliza-s essa unidade de medida.</li>
+        <li><strong>pc</strong>: paica. Medida de tipografia de papel. Não recomendado para renderização em telas.</li>
+    </ul>
+    <h2>Medidas Relativas</h2>
+    <ul>
+        <li><strong>em</strong>: relativo ao tamanho atual da fonte. Ao tamanho da letra M maiúsculo de uma fonte.</li>
+        <li><strong>ex</strong>: relativo a altura-x de uma fonte Ao tamanho da letra x minúsculo de uma fonte..</li>
+        <li><strong>rem</strong>: relativo ao tamanho atual da fonte e ao root, fonte que está configurada no body.</li>
+        <li><strong>vw</strong>: relativo ao viewport (tamanho da tela). É a porcentagem da largura da viewport.</li>
+        <li><strong>vh</strong>: relativo a altura da viewport.</li>
+        <li><strong>%</strong>: porcentagem.</li>
+    </ul>
+
+    <h2>Observações</h2>
+    <p>
+        <ul>
+            <li>O site w3c, para font-size recomenda a utilização das medidas <strong>px</strong> e/ou <strong>em</strong>;</li>
+            <li>O tamanho padrão do navegador é de 16px. Então, caso não seja especificado um medida, será usado 16px automaticamente;</li>
+            <li>16px geralmente é equivalente a 1em;</li>
+        </ul>
+    </p>
+</body>
+</html>
