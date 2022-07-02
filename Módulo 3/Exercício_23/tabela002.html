@@ -20,12 +20,35 @@
             font-size: 1.2em;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.499);
+            border: 1px solid black;
+        }
+
+        /* Aqui em nth-child(é possível colocar tbm "even" ou "odd" [par ou ímpar]) */
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
         tr {
             height: 8vh;
         }
 
         th {
-            background-image: linear-gradient(to right, gray, lightgray);
+            background-color: #383838;
+            color: white;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        table > thead > tr > th {
+            position: sticky;
+            top: -1px;
         }
 
         td {
@@ -33,7 +56,6 @@
             padding: 16px;
             text-align: center;
             vertical-align: middle;
-            text-shadow: 1px 1px 4px black;
             position: relative;
         }
 
@@ -42,7 +64,8 @@
         }
 
         td#populacao-total {
-            background-image: linear-gradient(to right, gray, lightgray);
+            background-color: #383838;
+            color: white;
         }
 
     </style>
@@ -50,10 +73,11 @@
 <body>
     <h1>População por Estado</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Unidade Federativa</th>
-                <th>População (2021)</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col" style="width: 80px;">População (2021)</th>
             </tr>
         </thead>
         <tbody>
@@ -168,7 +192,7 @@
 
         </tbody>
         <tfoot>
-            <th>População Total</th>
+            <th scope="row">População Total</th>
             <td class="number" id="populacao-total">213.317.639</td>
         </tfoot>
     </table>
